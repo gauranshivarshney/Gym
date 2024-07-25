@@ -1,0 +1,158 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    background: black;
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: .5rem;
+}
+
+.para{
+    margin-top: 40px;
+    font-size: 35px;
+    color: green;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.para1{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(128, 10, 10);
+    margin-bottom: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    margin-left: 350px;
+    border-radius: 10px;
+    width: 600px;
+    margin-top: 40px;
+}
+
+.wrapper{
+    color: white;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn{
+    width: 50%;
+    height: 45px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    border-radius: 40px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: gray;
+    color: black;
+    border: 2px solid black;
+}
+
+@media (max-width: 900px){
+    .para{
+        font-size: 25px;
+    }
+
+    .container{
+        border: none;
+    }
+
+    .container .wrapper{
+        margin-right: 700px;
+        font-size: 25px;
+    }
+
+    .wrapper .input-box{
+        width: 200px;
+    }
+
+    
+    .input-box input{
+        font-size: 15px;
+ 
+    }
+
+
+    .input-box i{
+        font-size: 15px;
+    }
+
+    
+    .wrapper .btn{
+        width: 40%;
+        font-size: 15px;
+        margin-left: 27px;
+    }   
+}

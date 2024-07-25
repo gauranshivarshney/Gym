@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DynamoGym</title>
+    <link rel="stylesheet" href="/stylesheets/style_view.css">
+</head>
+<body>
+    <h2>INVOICE</h2>
+    <div class="container">
+        <h3>Invoice To: </h3>
+        <p>Name: <%= user.name %></p>
+        <p>Email: <%= user.email %></p>
+        <table>
+            <tr>
+                <th>Gender</th>
+                <td><%= user.gender %></th>
+            </tr>
+            <tr>
+                <th>Application Fees</th>
+                <td>Rs. <%= user.fees %></td>
+            </tr>
+            <tr>
+                <th>Selected Plan</th>
+                <td><%= user.plans %> Rs. (<%= user.planCost %>)</td>
+            </tr>
+            <tr>
+                <th>Total Cost</th>
+                <td>Rs. <%= user.totalCost %></td>
+            </tr>
+        </table>
+    </div>
+    <div class="link">
+        <a href="/logout">
+            <button class="log">Logout</button>
+        </a>
+        <a href="/">
+            <button class="home">Back To Home</button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    color: white;
+}
+
+.para{
+    background-color: black;
+    padding-top: 150px;
+    font-size: 30px;
+    color: rgb(128, 10, 10);
+    padding-left: 510px;
+    font-weight: 600;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 150px;
+}
+
+.navbar{
+    display: flex;
+    background: rgb(27, 0, 0);
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px;
+    padding-left: 100px;
+}
+
+.nav-list li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+}
+
+.nav-list li a:hover{
+    color: rgb(160, 20, 20);
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-bottom: 10px;
+}
+
+.container .pricebox{
+    padding: 2rem;
+    text-align: center;
+    border: 0.1rem solid white;
+    border-radius: .5rem;
+    width: 27%;
+}
+
+.container .pricebox h3{
+    font-size: 2rem;
+    color: rgb(2, 47, 118);
+    padding-top: 1rem;
+}
+
+.container .pricebox .price-plan{
+    font-size: 3rem;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+
+.container .pricebox .price-plan span{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.container .pricebox .month{
+    font-size: 2rem;
+    color: rgb(99, 96, 96);
+}
+
+.container .pricebox .list{
+    padding: 1rem 0;
+}
+
+.container .pricebox .list{
+    font-size: 1.7rem;
+    line-height: 2;
+}
+
+.container .pricebox .list p i{
+    color: blue;
+}
+
+.container .pricebox .list p i.fa-times{
+    color: red;
+}
+
+.join{
+    background-color: black;
+    color: white;
+    height: 1100px;
+    text-align: center;
+}
+
+.joining{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 1000px;
+}
+
+.register{
+    color: red;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+form{
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h5{
+    font-size: 28px;
+    padding-top: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    width: 40%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-right: 15px;
+    gap: 20px;
+}
+
+.btn{
+    width: 20%;
+    background-color: rgb(155, 17, 17);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: rgb(2, 2, 148);
+}
+
+#log{
+    color: rgb(2, 81, 2);
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+
+@media (max-width: 900px){
+    .logo{
+        padding-top: 20px;
+        padding-left: 280px;
+        padding-bottom: 5px;
+    }
+    
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        padding-left: 280px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 590px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .joining{
+        padding-left: 40px;
+    }
+
+    .container{
+        margin-right: 100px;
+    }
+
+    .container .pricebox{
+        width: 35%;
+    }
+
+    .container .pricebox h3{
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .container .pricebox .price-plan{
+        font-size: 1.5rem;
+        padding-top: 0.8rem;
+    }
+
+    .container .pricebox .price-plan span{
+        font-size: 1.2rem;
+    }
+
+    .container .pricebox .month{
+        font-size: 1.5rem;
+    }
+
+    .container .pricebox .list{
+        padding: 0.5rem 0;
+    }
+
+    .container .pricebox .list{
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    form{
+        font-size: 16px;
+    }
+
+    h5{
+        font-size: 16px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"]{
+        width: 40%;
+    }
+
+    .btn{
+        width: 20%;
+        font-size: 16px;
+    }
+
+    .para{
+        padding-left: 220px;
+        font-size: 20px;
+    }
+}

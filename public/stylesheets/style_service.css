@@ -1,0 +1,201 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: .5rem;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 150px;
+}
+
+.navbar{
+    display: flex;
+    background: rgb(27, 0, 0);
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px;
+    padding-left: 100px;
+}
+
+.nav-list li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+}
+
+.nav-list li a:hover{
+    color: rgb(160, 20, 20);
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.service{
+    background-color: black;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+.heading{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.service .box-container .box{
+    height: 25rem;
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.service .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service .box-container .box .service-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 100%;
+    width: 100%;
+    background: grey;
+    text-align: center;
+    color: black;
+    padding-top: 5px;
+}
+
+.service .box-container .box .service-content h3{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.service .box-container .box .service-content p{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.service .box-container .box .service-content span{
+    font-size: 13px;
+}
+
+.service .box-container .box .service-content ul li{
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.service .box-container .box .service-content ul li p{
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.service .box-container .box:hover .service-content{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-width: 900px){
+    .logo{
+        padding-top: 20px;
+        padding-left: 280px;
+        padding-bottom: 5px;
+    }
+    
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        padding-left: 280px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 590px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .service{
+        padding-top: 40px;
+    }
+}

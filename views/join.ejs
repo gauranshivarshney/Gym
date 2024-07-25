@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DynamoGym</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/style_join.css">
+</head>
+<body>
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">DynamoGym</div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/service">Services</a></li>
+            <li><a href="/join">Join</a></li>
+            <li><a href="/stay">Connected</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="para">
+        <%
+            if(typeof message2 !== 'undefined'){
+                %>
+                    <p><%= message2 %></p>
+                <%
+            }
+        %>
+    </div>
+    <section class="join" id="join">
+        <h1 class="joining">Join Us</h1>
+        <h2 class="register">Registration</h2>
+        <form action="/register" method="post">
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Name.." name="name" required> <br>
+            <label for="gen">Gender: </label>
+            <input type="text" id="gen" placeholder="Gender.." name="gender" required> <br>
+            <label for="email">Email: </label> 
+            <input type="email" id="email" placeholder="Email.." name="email" required> <br>
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" placeholder="Password.." name="pass" required> <br>
+            <h5 class="fee">Application Fee: ₹1500/mo</h5> 
+            <input type="text" id="fees" placeholder="Enter the fees mentioned above..." name="fees" required> <br>
+            <h5 class="fee">Princing Plan</h5>
+            <div class="container">
+                <div class="pricebox">
+                    <h3>Basic Plan</h3>
+                    <div class="price-plan"><span>₹ </span>2250 <span>/mo</span></div>
+                    <h3 class="month">3 months</h3>
+                    <div class="list">
+                        <p><i class="fa fa-check"></i>Yoga</p>
+                        <p><i class="fa fa-check"></i>Cardio</p>
+                        <p><i class="fa fa-check"></i>Weight lifting</p>
+                        <p><i class="fa fa-times"></i>Trainer</p>
+                        <p><i class="fa fa-times"></i>Membership</p>
+                    </div>
+                </div>
+                <div class="pricebox">
+                    <h3>Standard Plan</h3>
+                    <div class="price-plan"><span>₹ </span>4500 <span>/mo</span></div>
+                    <h3 class="month">6 months</h3>
+                    <div class="list">
+                        <p><i class="fa fa-check"></i>Yoga</p>
+                        <p><i class="fa fa-check"></i>Cardio</p>
+                        <p><i class="fa fa-check"></i>Weight lifting</p>
+                        <p><i class="fa fa-check"></i>Trainer</p>
+                        <p><i class="fa fa-times"></i>Membership</p>
+                    </div>
+                </div>
+                <div class="pricebox">
+                    <h3>Premium Plan</h3>
+                    <div class="price-plan"><span>₹ </span>6750 <span>/mo</span></div>
+                    <h3 class="month">12 months</h3>
+                    <div class="list">
+                        <p><i class="fa fa-check"></i>Yoga</p>
+                        <p><i class="fa fa-check"></i>Cardio</p>
+                        <p><i class="fa fa-check"></i>Weight lifting</p>
+                        <p><i class="fa fa-check"></i>Trainer</p>
+                        <p><i class="fa fa-check"></i>Membership</p>
+                    </div>
+                </div>
+            </div>
+            <label for="plan">Plan: </label>
+            <input type="text" id="plan" placeholder="Enter the plan mentioned above.." name="plans" required> <br>
+            <a href="/login">
+                <button class="btn">Register</button>
+            </a>
+            <p class="login">Already register? <a href="/login" id="log">Login</a></p>
+        </form>
+    </section>
+    <script src="/javascripts/resp.js"></script>
+</body>
+</html>

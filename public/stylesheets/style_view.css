@@ -1,0 +1,155 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    background-color: white;
+    color: black;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: .5rem;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container{
+    padding-top: 30px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 60%;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 270px;
+}
+
+.container h3{
+    padding-left: 30px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.container p{
+    font-size: 22px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+table, th, td{
+    margin-left: 200px;
+    font-size: 22px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    height: 50px;
+}
+
+th, td{
+    text-align: center;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.log, .home{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.log{
+    background-color: rgb(139, 9, 9);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 45px;
+}
+
+.home{
+    background-color: rgb(12, 12, 132);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 45px;
+}
+
+.log:hover{
+    background-color: black;
+}
+
+.home:hover{
+    background-color: black;
+}
+
+@media (max-width: 900px){
+    h2{
+        font-size: 30px;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+
+    .container{
+        max-width: 100%;
+        margin-left: 130px;
+        height: 300px;
+    }
+
+    .container h3{
+        font-size: 20px;
+    }
+    
+    .container p{
+        font-size: 17px;
+    }
+
+    table{
+        margin-left: 110px;
+    }
+    
+    table, th, td{
+        font-size: 12px;
+        width: 40%;
+        height: 25px;
+    }
+
+    .log, .home{
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .log{
+        width: 100px;
+        height: 40px;
+    }
+
+    .home{
+        width: 120px;
+        height: 40px;
+    }
+}
